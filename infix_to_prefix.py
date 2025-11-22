@@ -4,7 +4,7 @@ def precedence(op):
 
 def infix_to_prefix(expression):
     reversed_expression = expression[::-1].translate(str.maketrans('()', ')('))
-
+ 
     stack = []
     postfix_output = []
     for char in reversed_expression:
